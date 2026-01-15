@@ -1,16 +1,17 @@
 /* font */
 
 body {
-    max-width: 1020px;
+    max-width: 1440px;
     padding: 120px;
     margin: 0px;
 }
 
 /* Navber */
 
-.navber .nav-link {
-    max-width: 1020px;
-    display: flex;
+.navber {
+    max-width: 1440px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
     justify-content: space-between;
     justify-content: center;
     align-items: center;
@@ -19,9 +20,12 @@ body {
 }
 
 .nav-link {
+    display: flex;
     gap: 20px;
-    align-items: center;
+    justify-content: center;
+    /* align-items: center; */
     text-decoration: none;
+    text-align: right;
     font-weight: 500;
 }
 
@@ -37,7 +41,7 @@ body {
 .navber h3 {
     font-size: 1.5rem;
     font-weight: 700;
-    margin-right: 100px;
+    text-align: left;
 }
 
 /* Header */
@@ -87,17 +91,22 @@ body {
 /* Main section */
 
 .sponser-section {
-    display: grid;
-    grid-template-columns: repeat(7, 1fr);
+    display: flex;
     align-items: center;
     justify-content: center;
+    gap: 30px;
     border: 0.1px solid gainsboro;
-    /* width: 110px; */
+    box-shadow: 5px 5px 5px gray;
     height: 100px;
     margin-bottom: 100px;
 }
 
+.sponser-section img {
+    width: 60px;
+}
+
 /* Card Section */
+
 .card {
     box-shadow: 10px 10px 20px gray;
     /* border: 0.5px solid gray; */
@@ -189,8 +198,41 @@ body {
 
 /* footer */
 .footer {
-    height: 240px;
-    width: 1020x;
+    width: 1440x;
     background-color: #0A0826;
+    padding-top: 20px;
     margin-top: 100px;
+}
+
+.footer-icon a {
+    color: white;
+    margin-right: 15px;
+
+}
+
+.footer-cotan {
+    width: 1440x;
+    background-color: #0A0826;
+}
+
+.footer-icon {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 20px;
+
+}
+
+.footer-cotan h3 {
+    color: white;
+    text-align: center;
+    align-items: center;
+    font-weight: 600;
+
+}
+
+.footer p {
+    color: white;
+    /* margin-top: 50px; */
+    text-align: center;
 }
